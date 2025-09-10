@@ -1342,8 +1342,8 @@ Valid values are: ${validReleaseVersionPrefixes
      * preserveMatchingDependencyRanges
      */
     const preserveMatchingDependencyRanges =
-      projectVersionConfig?.preserveLocalDependencyProtocols ??
-      releaseGroupVersionConfig?.preserveLocalDependencyProtocols ??
+      projectVersionConfig?.preserveMatchingDependencyRanges ??
+      releaseGroupVersionConfig?.preserveMatchingDependencyRanges ??
       false;
 
     /**

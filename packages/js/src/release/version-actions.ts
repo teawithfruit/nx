@@ -250,7 +250,7 @@ export default class JsVersionActions extends VersionActions {
                     continue;
                   } else {
                     throw new Error(
-                      `The version "${version}" is not a valid range for peerDependency "${packageName}" in manifest "${manifestToUpdate.manifestPath}". Please update to a valid range.`
+                      `The version "${version}" is not a valid range for ${depType} "${packageName}" in manifest "${manifestToUpdate.manifestPath}". Please update to a valid range.`
                     );
                   }
                 }
